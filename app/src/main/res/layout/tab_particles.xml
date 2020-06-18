@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/tabParticles" android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBox android:textColor="#eeeeee" android:id="@+id/checkParticles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Particles"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPart1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shape"/>
+    <RadioGroup android:orientation="vertical" android:id="@+id/radioGroupParticleShapes" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleSolidDots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Solid dots"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleDots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Blurred dots"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleLines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lines"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleStars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stars"/>
+    </RadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textParticleMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mode"/>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroupParticleMode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleModeRegular" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add on touch"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleModeFill" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fill screen"/>
+    </RadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPart2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textDemoPart3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How many particles are added around your fingers?"/>
+    <SeekBar android:id="@+id/SeekParticlesAmount" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPart4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lifetime"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textDemoPart5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How long will particles stay on screen?"/>
+    <SeekBar android:id="@+id/SeekParticlesLifeTime" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/TextView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Size"/>
+    <SeekBar android:id="@+id/SeekParticlesSize" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPart6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Colors"/>
+    <RadioGroup android:id="@+id/radioGroupParticleColors" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleColorsPaint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use paint colors"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioParticleColorsOther" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use separate color"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/buttonParticleColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Particle color"/>
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADVICE: High amount and lifetime of particles can decrease performance (Frames Per Second)."/>
+</LinearLayout>

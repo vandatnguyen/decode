@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabInput2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textInputTouchSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action on tap/hold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupInputTouchMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioTouchStreamSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stream source"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioTouchVortex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vortex"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioTouch2Stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2-way blower"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioTouch2StreamAlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotating blower"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioTouchSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioTouchSink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sink"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioTouchSourceSink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source / sink"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioTouchNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textColor="#eeeeee" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textTouchInputForce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Force"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekTouchInputForce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textTouchInputSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Size"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekTouchInputSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+</LinearLayout>

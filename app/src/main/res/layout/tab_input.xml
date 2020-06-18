@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabInput"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textInputSwipeSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action on swipe"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupInputSwipeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioSwipeStream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:text="Stream"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioSwipeInverseStream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:text="Inverse stream"
+            android:textColor="#eeeeee" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textInputForce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Force"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekInputForce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textInputSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Size"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekInputSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkInputSwipeConstant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Constant-force swipe"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textInputSwipeConstantDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If checked, forces added on swipe will be independent of how fast your finger is moving."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+</LinearLayout>

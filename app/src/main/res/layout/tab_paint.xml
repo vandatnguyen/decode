@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/tabPaint" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How much paint flows out of your fingers?"/>
+    <SeekBar android:id="@+id/SeekFluidAmount" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPaint1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lifetime"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textDemoPaint2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How long will fluid stay on screen?"/>
+    <SeekBar android:id="@+id/SeekFluidLifeTime" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPaint3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Colors"/>
+    <RadioGroup android:id="@+id/radioGroupColors" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioColorsRandom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Random colors"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layoutPaintColorRandom" android:paddingLeft="35dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPaintRandomSat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Color saturation"/>
+            <SeekBar android:id="@+id/seekRandomSaturation" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioColorPalette" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Color palette"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layoutPaintColorPalette" android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkColor0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonColor0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkColor1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonColor1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkColor2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonColor2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 3"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkColor3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonColor3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 4"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkColor4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonColor4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkColor5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonColor5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 6"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioColorDoublePalette" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Color palette with background color"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layoutPaintDoublePalette" android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textDemoPaint5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="In this mode, you get to pick the background color. Also, color mixing works differently."/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkDColor0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonDColor0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkDColor1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonDColor1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkDColor2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <Button android:id="@+id/buttonDColor2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Color 3"/>
+            </LinearLayout>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonBackgroundColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Background color"/>
+        </LinearLayout>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioColorTrippy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trippy colors"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioColorMulti" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Color scale"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layoutPaintMultiColors" android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroupMultiColorsDouble" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:textColor="#eeeeee" android:id="@+id/radioMultiColorsOne" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 palette"/>
+                <RadioButton android:textColor="#eeeeee" android:id="@+id/radioMultiColorsTwo" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 palettes"/>
+            </RadioGroup>
+            <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Background color"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#1 low" android:layout_weight="0.5"/>
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor5" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#2 low" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#1 mid" android:layout_weight="0.5"/>
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor6" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#2 mid" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor3" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#1 high" android:layout_weight="0.5"/>
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor7" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#2 high" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor4" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#1 max" android:layout_weight="0.5"/>
+                <Button android:textColorHighlight="#ffffff" android:id="@+id/buttonMColor8" android:layout_width="0dp" android:layout_height="wrap_content" android:text="#2 max" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <CheckBox android:textColor="#eeeeee" android:id="@+id/checkCartoonColors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cartoon colors"/>
+        </LinearLayout>
+    </RadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutOverbrightColors" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:textColor="#eeeeee" android:id="@+id/checkOverbrightColors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Overbright colors"/>
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <CheckBox android:textColor="#eeeeee" android:id="@+id/checkInvertColors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Invert colors"/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPaint4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Color change"/>
+    <RadioGroup android:id="@+id/radioGroupColorChange" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioColorChgTouch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="With new touch"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioColorChgTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Every moment"/>
+    </RadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADVICE: Set paint amount to minimum if you want to draw with particles only."/>
+</LinearLayout>

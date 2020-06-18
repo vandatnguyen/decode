@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabEffects"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textDemoEff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen edge mode"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textDemoEff2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How the fluid behaves at the edges of the screen?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioBorderWall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wall"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioBorderWrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrap"
+            android:textColor="#eeeeee" />
+
+        <RadioButton
+            android:id="@+id/radioBorderWrapMirror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrap and mirror"
+            android:textColor="#eeeeee" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textDemoEff3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textDemoEff4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tilt your device and the fluid will follow! Make sure to disable your device&apos;s autorotate option."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <SeekBar
+        android:id="@+id/SeekGravity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <CheckBox
+        android:id="@+id/checkShadingEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3D effect"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textShading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intensity"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <SeekBar
+        android:id="@+id/seekShadingBumpiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textShadingSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color brightness"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <SeekBar
+        android:id="@+id/seekShadingFluidBrightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textShading3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Refl. brightness"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <TextView
+            android:id="@+id/textShading4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Refl. blur/focus"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekShadingSpecular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <SeekBar
+            android:id="@+id/seekShadingSpecPower"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkShadingSpecOnlyGlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Only reflections emit glow"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textShading5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTE: The 3D effect will use light position and color settings from the Glow and Light section, if it is enabled."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <CheckBox
+        android:id="@+id/checkGlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glow and Light"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textGlowIntensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intensity"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textGlowStr0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Near"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekGlowStr0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textGlowStr1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Mid"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekGlowStr1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textGlowStr2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Far"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekGlowStr2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textGlowThresholdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Threshold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textGlowThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Higher threshold means that only brighter fluid will emit glow"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <SeekBar
+        android:id="@+id/seekGlowThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textGlowPartIntensTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Particle lighting"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textGlowPartIntens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The glow can act as a source of light for the particles"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <SeekBar
+        android:id="@+id/seekGlowPartIntens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkLightSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Light"
+            android:textColor="#eeeeee" />
+
+        <Button
+            android:id="@+id/buttonLightColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textLightIntens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Intensity"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekLightIntens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textLightRadius"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Size"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekLightRadius"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkShadowSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Shadows"
+            android:textColor="#eeeeee" />
+
+        <CheckBox
+            android:id="@+id/checkShadowSelf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Self shadow"
+            android:textColor="#eeeeee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text=" "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <CheckBox
+            android:id="@+id/checkShadowInverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Inverse shadow"
+            android:textColor="#eeeeee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textShadowIntens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Intensity"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekShadowIntens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textShadowFalloff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Falloff length"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/seekShadowFalloff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textLightSourceSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light/shadow source speed"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <SeekBar
+        android:id="@+id/seekLightSourceSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textLightPosX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Position X"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+
+        <TextView
+            android:id="@+id/textLightPosY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Position Y"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#eeeeee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekLightSourcePosX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <SeekBar
+            android:id="@+id/seekLightSourcePosY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <CheckBox
+        android:id="@+id/checkDetailTexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fluid texture"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textDemoEff6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adds detail to the fluid"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <Spinner
+        android:id="@+id/spinnerDetailTexture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textDetailScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scale"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <SeekBar
+        android:id="@+id/seekDetailUVScale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADVICE: Fluid textures are quite slow, so when they&apos;re enabled, the simulation resolution (Quality) is automatically decreased."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+</LinearLayout>

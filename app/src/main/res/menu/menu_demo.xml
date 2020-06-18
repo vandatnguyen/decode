@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/icon_settings" android:id="@+id/settings" android:title="@string/menu_settings"/>
+    <item android:icon="@drawable/icon_menu" android:id="@+id/problems" android:title="@string/menu_problems"/>
+    <item android:icon="@drawable/icon_buy" android:id="@+id/buy" android:title="@string/menu_buy"/>
+    <item android:icon="@drawable/icon_image" android:id="@+id/save_image" android:title="@string/menu_save_image"/>
+    <item android:icon="@drawable/icon_lwp" android:id="@+id/set_lwp" android:title="@string/menu_set_lwp"/>
+    <item android:icon="@drawable/icon_menu" android:id="@+id/change_menu_button" android:title="@string/menu_change_button"/>
+    <item android:icon="@drawable/icon_reset" android:id="@+id/clear_screen" android:title="@string/menu_clear_screen"/>
+</menu>

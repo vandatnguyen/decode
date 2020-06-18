@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ee080808" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TabHost android:id="@+id/tabHost" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TabWidget android:gravity="bottom" android:id="@android:id/tabs" android:layout_width="match_parent" android:layout_height="35dp"/>
+            <FrameLayout android:id="@android:id/tabcontent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/tab_presets"/>
+                <include layout="@layout/tab_paint"/>
+                <include layout="@layout/tab_particles"/>
+                <include layout="@layout/tab_simul"/>
+                <include layout="@layout/tab_input_parent"/>
+                <include layout="@layout/tab_effects"/>
+                <include layout="@layout/tab_about"/>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

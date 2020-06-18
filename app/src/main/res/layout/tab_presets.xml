@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/tabPresets" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_gravity="center_horizontal" android:id="@+id/textFeatured" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Featured presets"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset00" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset01" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset02" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset03" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset10" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset11" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset12" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset13" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset20" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset21" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset22" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset23" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset30" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset31" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset32" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonFeatPreset33" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <Button android:id="@+id/buttonChoosePreset" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="See all 50+ presets &gt;&gt;&gt;"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/groupApplyToLwp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        <Button android:id="@+id/buttonApplyToLwp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Apply settings to live wallpaper"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use all current app settings as the live wallpaper settings."/>
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoPre1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load or save user preset"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textDemoPre2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Here you can save your fluid settings and use them when you wish"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset0" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 1" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset0" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset0" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 2" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 3" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset3" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 4" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset3" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset3" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset4" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 5" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset4" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset4" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset5" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 6" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset5" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset5" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset6" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 7" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset6" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset6" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset7" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 8" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset7" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset7" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset8" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 9" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset8" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset8" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textPreset9" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Empty 10" android:layout_weight="0.5"/>
+        <Button android:id="@+id/buttonSavePreset9" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.25"/>
+        <Button android:id="@+id/buttonLoadPreset9" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Load" android:layout_weight="0.25"/>
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADVICE: You can use Magic Fluids as a Live Wallpaper. Regular app and wallpaper have separate settings but share the same presets, so you can save a preset while playing with the app and load it in the wallpaper."/>
+</LinearLayout>

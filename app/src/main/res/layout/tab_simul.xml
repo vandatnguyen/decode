@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/tabSimulation" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Paint quality (resolution)"/>
+    <Spinner android:id="@+id/spinnerPaintRes" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Simulation resolution"/>
+    <Spinner android:id="@+id/spinnerQuality" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Glow/light/shadow quality"/>
+    <Spinner android:id="@+id/spinnerEffectsQual" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoAnim1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fluid type"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textDemoAnim2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smoke is steady and relaxing. Water is more dynamic and swirly."/>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroupFluidType" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioFluidSmoke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smoke"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioFluidWater" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Water"/>
+        <RadioButton android:textColor="#eeeeee" android:id="@+id/radioFluidJello" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jello"/>
+    </RadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textVelLifetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Momentum lifetime"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textVelLifetimeDescr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How long do the swipes and swirls persist?"/>
+    <SeekBar android:id="@+id/seekVelLifetime" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textSwirliness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Swirliness"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textSwirlinessDescr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tendency of the fluid to be swirly, but also more irregular and jagged."/>
+    <SeekBar android:id="@+id/seekSwirliness" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoAnim5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sources"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:id="@+id/textDemoAnim6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tired fingers? Magic Fluids will draw shtuff for you"/>
+    <Spinner android:id="@+id/spinnerSources" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:id="@+id/textDemoAnim7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Source speed"/>
+    <SeekBar android:id="@+id/seekSourceSpeed" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <CheckBox android:textColor="#eeeeee" android:id="@+id/checkAutoOnResume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick sources on app resume"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Automatic sources will appear briefly whenever you open the app / display the live wallpaper."/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADVICE: For best experience, try to find the highest quality setting, under which fluid motion is still smooth (not jerky). Animation may look incorrect or unnatural if you use quality settings much higher than optimal for your device."/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name='Magic Fluids Free'
+include ':app'

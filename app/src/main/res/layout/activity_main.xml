@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <com.magicfluids.MyGLSurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/settings_view"
+        layout="@layout/view_settings" />
+
+    <include
+        android:id="@+id/input_settings_view"
+        layout="@layout/view_input_settings" />
+
+    <ImageButton
+        android:id="@+id/buttonOpenMenu"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|right|center_vertical|center_horizontal|center"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ni_menu" />
+
+    <ImageButton
+        android:id="@+id/buttonCloseSettings"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="top|right|center_vertical|center_horizontal|center"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ni_close" />
+
+    <ImageButton
+        android:id="@+id/buttonOpenInputSettings"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|left|center_vertical|center_horizontal|center"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ni_hand" />
+</FrameLayout>
